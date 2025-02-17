@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rem and EM</title>
+    <style>
+      html {
+        font-size: 2vw;
+      }
+      /* div {
+        font-size: 1rem;
+        font-size: 2rem;
+      } */
+      .parent {
+        font-size: 1rem;
+        /* font-size: 2rem;*/
+      }
+      .child {
+        font-size: 2rem;
+      }
+      .grand-child {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Root EM and Element Multiplier</h1>
+    <div class="parent">
+      <!-- Hello Root Elements Multiplier -->
+      Hello I am Parent
+      <div class="child">
+        I am child
+        <div class="grand-child">
+          I am grandchild
+          <div class="grandGrandChild">I am grandGrandChild</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
